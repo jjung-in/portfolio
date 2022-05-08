@@ -1,1 +1,52 @@
 @import "../../config/variables.scss";
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  z-index: 99;
+
+  .header_inwrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  #nav {
+    ul {
+      display: flex;
+
+      li {
+        position: relative;
+        margin-left: 50px;
+        cursor: pointer;
+        font-size: 13px;
+
+        &::after {
+          content: "";
+          width: 0;
+          height: 0.5px;
+          background: #000000;
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          transition: all 0.3s;
+        }
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
