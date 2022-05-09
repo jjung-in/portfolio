@@ -17,8 +17,47 @@
   }
 
   .info_wrap {
-    background-color: #f5f5f5;
+    // background-color: #f5f5f5;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 555px;
     margin-bottom: 30px;
+
+    .text_wrap {
+      margin-bottom: 50px;
+      font-family: "Noto Sans KR", sans-serif;
+
+      &:last-of-type {
+        margin-bottom: 60px;
+      }
+
+      h6 {
+        margin-bottom: 3px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      p {
+        a {
+          color: #337ab7;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    #footer {
+      position: absolute;
+      bottom: 40px;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 13px;
+      font-family: "Noto Sans KR", sans-serif;
+    }
   }
 }

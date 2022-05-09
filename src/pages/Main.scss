@@ -1,5 +1,5 @@
 body {
-  // overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 /* 화면에서 스크롤바 안보이게 */
@@ -8,11 +8,11 @@ body {
   scrollbar-width: none; /* Firefox */
 }
 #main::-webkit-scrollbar {
-  // display: none; /* Chrome, Safari, Opera*/
+  display: none; /* Chrome, Safari, Opera*/
 }
 
 #main {
-  // overflow-y: auto;
+  overflow-y: auto;
   height: 100vh;
 }
 
