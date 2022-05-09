@@ -1,14 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4fb4497c.css",
+    "main.css": "/portfolio/static/css/main.31c1f463.css",
     "main.js": "/portfolio/static/js/main.39f38603.js",
+    "static/media/NotoSansKR-Bold.otf": "/portfolio/static/media/NotoSansKR-Bold.c252383c4f70753be0e7.otf",
+    "static/media/NotoSansKR-Regular.otf": "/portfolio/static/media/NotoSansKR-Regular.e1aa54c04a18648e6468.otf",
+    "static/media/Montserrat-Bold.ttf": "/portfolio/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
+    "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
     "static/media/sample_img.png": "/portfolio/static/media/sample_img.a1f32a961a09b3416b0c.png",
     "index.html": "/portfolio/index.html",
-    "main.4fb4497c.css.map": "/portfolio/static/css/main.4fb4497c.css.map",
+    "main.31c1f463.css.map": "/portfolio/static/css/main.31c1f463.css.map",
     "main.39f38603.js.map": "/portfolio/static/js/main.39f38603.js.map"
   },
   "entrypoints": [
-    "static/css/main.4fb4497c.css",
+    "static/css/main.31c1f463.css",
     "static/js/main.39f38603.js"
   ]
 }
