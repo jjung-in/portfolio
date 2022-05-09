@@ -6,8 +6,7 @@ function Contact() {
     <div id="contact">
       <div className="container contact_wrap">
         <h2>CONTACT</h2>
-        <div className="info_wrap">
-        </div>
+        <div className="info_wrap"></div>
       </div>
     </div>
   );

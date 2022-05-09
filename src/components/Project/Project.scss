@@ -60,22 +60,103 @@
           object-fit: cover;
         }
 
-        a {
+        .text_wrap {
           position: absolute;
           top: 0;
           left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 100%;
           height: 100%;
-          background-color: #000000;
-          opacity: 0;
-          transition: all 0.5s;
+          background-color: rgba(0, 0, 0, 0);
+          transition: all 0.4s;
 
-          &:hover {
-            opacity: 0.7;
+          &::before {
+            content: "";
+            background: #fff;
+            width: 0px;
+            height: 1px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            transition: all 0.4s;
           }
 
-          span {
-            color: #ffffff;
+          &::after {
+            content: "";
+            background: #fff;
+            width: 1px;
+            height: 0px;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            transition: all 0.4s;
+          }
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+
+            &::before {
+              width: calc(100% - 40px);
+            }
+
+            &::after {
+              height: calc(100% - 40px);
+            }
+          }
+
+          a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+
+            &::before {
+              content: "";
+              background: #fff;
+              width: 0px;
+              height: 1px;
+              position: absolute;
+              left: 20px;
+              bottom: 20px;
+              transition: all 0.4s;
+            }
+
+            &::after {
+              content: "";
+              background: #fff;
+              width: 1px;
+              height: 0px;
+              position: absolute;
+              left: 20px;
+              bottom: 20px;
+              transition: all 0.4s;
+            }
+
+            &:hover {
+              &::before {
+                width: calc(100% - 40px);
+              }
+
+              &::after {
+                height: calc(100% - 40px);
+              }
+
+              span {
+                opacity: 1;
+              }
+            }
+
+            span {
+              color: #ffffff;
+              font-size: 24px;
+              font-weight: bold;
+              letter-spacing: 1px;
+              opacity: 0;
+              transition: all 0.4s;
+            }
           }
         }
       }
