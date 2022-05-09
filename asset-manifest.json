@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.5a2e65a6.css",
+    "main.css": "/portfolio/static/css/main.d2ec0608.css",
     "main.js": "/portfolio/static/js/main.b6277ece.js",
     "static/media/NotoSansKR-Bold.otf": "/portfolio/static/media/NotoSansKR-Bold.c252383c4f70753be0e7.otf",
     "static/media/NotoSansKR-Regular.otf": "/portfolio/static/media/NotoSansKR-Regular.e1aa54c04a18648e6468.otf",
@@ -8,11 +8,11 @@
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
     "static/media/sample_img.png": "/portfolio/static/media/sample_img.a1f32a961a09b3416b0c.png",
     "index.html": "/portfolio/index.html",
-    "main.5a2e65a6.css.map": "/portfolio/static/css/main.5a2e65a6.css.map",
+    "main.d2ec0608.css.map": "/portfolio/static/css/main.d2ec0608.css.map",
     "main.b6277ece.js.map": "/portfolio/static/js/main.b6277ece.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a2e65a6.css",
+    "static/css/main.d2ec0608.css",
     "static/js/main.b6277ece.js"
   ]
 }
