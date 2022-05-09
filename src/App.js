@@ -8,7 +8,8 @@ import Main from "./pages/Main";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    {/* <BrowserRouter> */}
       <Header />
       <Routes>
         <Route path="/" element={<Main />} />

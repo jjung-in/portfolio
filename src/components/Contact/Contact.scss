@@ -13,7 +13,7 @@
   h2 {
     margin-bottom: 30px;
     font-size: 2.5rem;
-    font-weight: 700;
+    font-family: "Montserrat-Bold";
   }
 
   .info_wrap {
@@ -22,24 +22,26 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 555px;
     margin-bottom: 30px;
 
     .text_wrap {
       margin-bottom: 50px;
-      font-family: "Noto Sans KR", sans-serif;
 
       &:last-of-type {
         margin-bottom: 60px;
       }
 
       h6 {
-        margin-bottom: 3px;
-        font-size: 20px;
+        margin-bottom: 10px;
+        font-size: 22px;
         font-weight: bold;
       }
 
       p {
+        font-size: 18px;
+
         a {
           color: #337ab7;
 
@@ -57,7 +59,7 @@
       left: 50%;
       transform: translateX(-50%);
       font-size: 13px;
-      font-family: "Noto Sans KR", sans-serif;
+      font-family: "NotoSansKR-Regular";
     }
   }
 }
