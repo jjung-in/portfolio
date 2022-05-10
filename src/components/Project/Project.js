@@ -9,7 +9,7 @@ function Project() {
       <div className="container project_inwrap">
         <h2>PROJECT</h2>
         <div className="contents_wrap">
-          <Link to="/" className="more">
+          <Link to="/project" className="more">
             더보기
           </Link>
           <ul>
