@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Project.scss";
 import sample_img from "../../assets/sample_img.png";
+import portfolio_preview from "../../assets/img_portfolio/portfolio_preview.png";
+import oramyun_preview from "../../assets/img_oramyun/oramyun_preview.png";
+import doran_preview from "../../assets/img_doran/doran_preview.png";
+import chic_preview from "../../assets/img_chic/chic_preview.png";
+import paris_preview from "../../assets/img_paris/paris_preview.png";
+import crain_preview from "../../assets/img_crain/crain_preview.png";
 
 function Project() {
   return (
@@ -14,50 +20,50 @@ function Project() {
           </Link>
           <ul>
             <li>
-              <img src={sample_img} alt="project1" />
+              <img src={portfolio_preview} alt="portfolio" />
               <div className="text_wrap">
-                <Link to="/">
+                <Link to="/project/portfolio">
+                  <span>포트폴리오</span>
+                </Link>
+              </div>
+            </li>
+            <li>
+              <img src={oramyun_preview} alt="oramyun" />
+              <div className="text_wrap">
+                <Link to="/project/oramyun">
+                  <span>오늘의 라면</span>
+                </Link>
+              </div>
+            </li>
+            <li>
+              <img src={doran_preview} alt="doran-doran" />
+              <div className="text_wrap">
+                <Link to="/project/doran">
                   <span>도란도란</span>
                 </Link>
               </div>
             </li>
             <li>
-              <img src={sample_img} alt="project1" />
+              <img src={chic_preview} alt="chic-chic" />
               <div className="text_wrap">
-                <Link to="/">
-                  <span>칙칙폭폭</span>
+                <Link to="/project/chic">
+                  <span>칰칰폭폭</span>
                 </Link>
               </div>
             </li>
             <li>
-              <img src={sample_img} alt="project1" />
+              <img src={paris_preview} alt="paris" />
               <div className="text_wrap">
-                <Link to="/">
+                <Link to="/project/paris">
                   <span>파리바게트</span>
                 </Link>
               </div>
             </li>
             <li>
-              <img src={sample_img} alt="project1" />
+              <img src={crain_preview} alt="crain" />
               <div className="text_wrap">
-                <Link to="/">
+                <Link to="/project/crain">
                   <span>크레인 고장진단 시스템</span>
-                </Link>
-              </div>
-            </li>
-            <li>
-              <img src={sample_img} alt="project1" />
-              <div className="text_wrap">
-                <Link to="/">
-                  <span>프로젝트명</span>
-                </Link>
-              </div>
-            </li>
-            <li>
-              <img src={sample_img} alt="project1" />
-              <div className="text_wrap">
-                <Link to="/">
-                  <span>프로젝트명</span>
                 </Link>
               </div>
             </li>
