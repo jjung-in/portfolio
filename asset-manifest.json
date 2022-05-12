@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4d84cd42.css",
-    "main.js": "/portfolio/static/js/main.abf378cd.js",
+    "main.css": "/portfolio/static/css/main.7f305efd.css",
+    "main.js": "/portfolio/static/js/main.72aba922.js",
     "static/media/NotoSansKR-Bold.otf": "/portfolio/static/media/NotoSansKR-Bold.c252383c4f70753be0e7.otf",
     "static/media/NotoSansKR-Regular.otf": "/portfolio/static/media/NotoSansKR-Regular.e1aa54c04a18648e6468.otf",
     "static/media/doran_preview.png": "/portfolio/static/media/doran_preview.b30268bad6858e461301.png",
@@ -9,16 +9,22 @@
     "static/media/oramyun_preview.png": "/portfolio/static/media/oramyun_preview.c0a05ee59ca993ade584.png",
     "static/media/Montserrat-Bold.ttf": "/portfolio/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
-    "static/media/sample_img.png": "/portfolio/static/media/sample_img.a1f32a961a09b3416b0c.png",
+    "static/media/portfolio_preview.png": "/portfolio/static/media/portfolio_preview.496134eeeb4666a85501.png",
     "static/media/chic_preview.png": "/portfolio/static/media/chic_preview.1969baffff70a8e7d071.png",
+    "static/media/itsme2.png": "/portfolio/static/media/itsme2.390ecea1dd9c9d839042.png",
     "static/media/crain_preview.png": "/portfolio/static/media/crain_preview.0d00730f0dcc8fcd8c6f.png",
-    "static/media/portfolio_preview.png": "/portfolio/static/media/portfolio_preview.58c0abc02ad627fc4c74.png",
+    "static/media/scss.png": "/portfolio/static/media/scss.95b95881f872d00e7e7b.png",
+    "static/media/itsme.jpg": "/portfolio/static/media/itsme.d31e1eb7a06ce37295dc.jpg",
+    "static/media/cpp.png": "/portfolio/static/media/cpp.954f6732266485dfa611.png",
+    "static/media/c.png": "/portfolio/static/media/c.d083731589e745941c43.png",
+    "static/media/java.png": "/portfolio/static/media/java.5ddc009d023203f9b3f8.png",
+    "static/media/oracle.png": "/portfolio/static/media/oracle.9156326c725803e9b7ba.png",
     "index.html": "/portfolio/index.html",
-    "main.4d84cd42.css.map": "/portfolio/static/css/main.4d84cd42.css.map",
-    "main.abf378cd.js.map": "/portfolio/static/js/main.abf378cd.js.map"
+    "main.7f305efd.css.map": "/portfolio/static/css/main.7f305efd.css.map",
+    "main.72aba922.js.map": "/portfolio/static/js/main.72aba922.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d84cd42.css",
-    "static/js/main.abf378cd.js"
+    "static/css/main.7f305efd.css",
+    "static/js/main.72aba922.js"
   ]
 }
