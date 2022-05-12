@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Project.scss";
-import sample_img from "../../assets/sample_img.png";
 import portfolio_preview from "../../assets/img_portfolio/portfolio_preview.png";
 import oramyun_preview from "../../assets/img_oramyun/oramyun_preview.png";
 import doran_preview from "../../assets/img_doran/doran_preview.png";

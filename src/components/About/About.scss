@@ -9,11 +9,198 @@
   }
 
   .about_box {
+    display: flex;
     width: 100%;
     // height: 530px;
     height: 640px;
+    padding: 60px;
+    text-align-last: left;
     background: #ffffff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 5px 0 rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+
+    .left_wrap {
+      width: 50%;
+
+      .info_box {
+        display: flex;
+        align-items: center;
+
+        .myimg {
+          width: 183px;
+          height: 183px;
+          margin-right: 50px;
+          border-radius: 50%;
+          background-image: url(../../assets/itsme.jpg);
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center 0px;
+          text-indent: -999px;
+        }
+
+        ul {
+          li {
+            margin-bottom: 15px;
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+
+            .title {
+              display: inline-block;
+              width: 78px;
+              font-family: "NotoSansKR-Bold";
+            }
+            .value {
+              font-family: "NotoSansKR-Regular";
+
+              a {
+                color: #337ab7;
+                font-family: "NotoSansKR-Regular";
+
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .skill_box {
+        margin-top: 55px;
+
+        .title {
+          display: inline-block;
+          width: 78px;
+          margin-bottom: 15px;
+          font-family: "NotoSansKR-Bold";
+        }
+
+        ul {
+          li {
+            display: flex;
+            margin-bottom: 18px;
+
+            p {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-right: 10px;
+
+              .skill-img {
+                display: inline-block;
+                width: 90px;
+                height: 50px;
+                padding-bottom: 3px;
+                text-indent: -999px;
+
+                &.scss {
+                  width: 65px;
+                }
+
+                &.react {
+                  width: 85px;
+                }
+              }
+
+              .skill-text {
+                display: inline-block;
+                font-family: "NotoSansKR-Regular";
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right_wrap {
+      padding-left: 20px;
+      width: 50%;
+
+      h2 {
+        margin-top: 10px;
+        margin-bottom: 33px;
+        font-size: 2rem;
+        font-family: "Montserrat-Bold";
+      }
+
+      p {
+        text-align: left;
+        line-height: 25px;
+      }
+    }
+  }
+}
+
+.skill-img {
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &.html {
+    background-image: url(../../assets/html.png);
+    background-size: 35px;
+  }
+
+  &.css {
+    background-image: url(../../assets/css.png);
+    background-size: 35px;
+  }
+
+  &.js {
+    background-image: url(../../assets/javascript.png);
+    background-size: 37px;
+  }
+
+  &.jq {
+    background-image: url(../../assets/jquery.png);
+    background-size: 40px;
+  }
+
+  &.scss {
+    background-image: url(../../assets/scss.png);
+    background-size: 42px;
+    width: 60px;
+  }
+
+  &.react {
+    background-image: url(../../assets/react.png);
+    background-size: 40px;
+  }
+
+  &.spring {
+    background-image: url(../../assets/spring.png);
+    background-size: 52px;
+  }
+
+  &.springb {
+    background-image: url(../../assets/springboot.png);
+    background-size: 40px;
+  }
+
+  &.oracle {
+    background-image: url(../../assets/oracle.png);
+    background-size: 75px;
+  }
+
+  &.mysql {
+    background-image: url(../../assets/mysql.png);
+    background-size: 63px;
+  }
+
+  &.java {
+    background-image: url(../../assets/java.png);
+    background-size: 50px;
+  }
+
+  &.c {
+    background-image: url(../../assets/c.png);
+    background-size: 40px;
+  }
+
+  &.cpp {
+    background-image: url(../../assets/cpp.png);
+    background-size: 35px;
   }
 }
 

@@ -1,5 +1,18 @@
 #home {
   background-color: black;
   height: calc(100vh - 75px);
-	padding-top: 75px;
+  padding-top: 75px;
+
+  .home_inwrap {
+    display: flex;
+    align-items: center;
+  }
+
+  p {
+    color: #ffffff;
+    font-size: 64px;
+    line-height: 87px;
+    font-family: "LeferiPoint-BlackA";
+    text-align: left;
+  }
 }
