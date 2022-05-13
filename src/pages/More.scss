@@ -136,27 +136,3 @@
     }
   }
 }
-
-.topBtn {
-  position: fixed;
-  bottom: -50px;
-  right: 50px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #f5f5f5;
-  background-image: url(../assets/arrow.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-  transition: all 0.3s ease-in;
-	z-index: 10;
-	
-  &.active {
-		bottom: 50px;
-  }
-	
-  &:hover {
-		background-image: url(../assets/ico_upArrow.png);
-  }
-}
