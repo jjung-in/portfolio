@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "./Main.scss";
+import Header from "../components/Header/Header";
 import Home from "../components/Home/Home";
 import About from "../components/About/About";
 import Project from "../components/Project/Project";
@@ -98,6 +99,7 @@ function Main() {
   return (
     // <div ref={outerDivRef} id="main">
     <div id="main">
+      <Header />
       <Home />
       <About />
       <Project />
