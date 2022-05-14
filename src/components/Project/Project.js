@@ -5,7 +5,7 @@ import portfolio_preview from "../../assets/img_portfolio/portfolio_preview.png"
 import oramyun_preview from "../../assets/img_oramyun/oramyun_preview.png";
 import doran_preview from "../../assets/img_doran/doran_preview.png";
 import chic_preview from "../../assets/img_chic/chic_preview.png";
-import paris_preview from "../../assets/img_paris/paris_preview.png";
+import paris_preview from "../../assets/img_paris/thumbnail.png";
 import crain_preview from "../../assets/img_crain/crain_preview.png";
 
 function Project() {

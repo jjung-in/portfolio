@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./More.scss";
 import Header2 from "../components/Header/Header2";
@@ -7,11 +7,10 @@ import portfolio_preview from "../assets/img_portfolio/portfolio_preview.png";
 import oramyun_preview from "../assets/img_oramyun/oramyun_preview.png";
 import doran_preview from "../assets/img_doran/doran_preview.png";
 import chic_preview from "../assets/img_chic/chic_preview.png";
-import paris_preview from "../assets/img_paris/paris_preview.png";
+import paris_preview from "../assets/img_paris/thumbnail.png";
 import crain_preview from "../assets/img_crain/crain_preview.png";
 
 function More() {
-  /* 프로젝트 정보 */
   const projectList = [
     {
       title: "포트폴리오",

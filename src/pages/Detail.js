@@ -7,8 +7,10 @@ import portfolio_preview from "../assets/img_portfolio/portfolio_preview.png";
 import oramyun_preview from "../assets/img_oramyun/oramyun_preview.png";
 import doran_preview from "../assets/img_doran/doran_preview.png";
 import chic_preview from "../assets/img_chic/chic_preview.png";
-import paris_preview from "../assets/img_paris/paris_preview.png";
+import paris_preview from "../assets/img_paris/thumbnail.png";
 import crain_preview from "../assets/img_crain/crain_preview.png";
+import Paris from "../components/ProjectData/Paris";
+import Carin from "../components/ProjectData/Crain";
 
 function Detail() {
   const projectData = {
@@ -43,10 +45,16 @@ function Detail() {
       function: ["반응형", "스크롤", "스크롤"],
     },
     paris: {
-      title: "파리바게트",
+      title: "케이크 픽업 예약 서비스",
       previewImg: paris_preview,
-      description: "전래동화의 주인공",
+      githubLink: "https://github.com/jjung-in/multi-mini-project",
+      description: "멀티캠퍼스 지능형 웹 서비스 풀스택 개발 과정에서 미니 프로젝트로 '케이크 픽업 예약' 사이트를 제작했습니다. 파리바게트 홈페이지를 참고했으며, 케이크 및 예약 옵션을 선택하여 케이크를 픽업 예약하는 서비스를 구현했습니다.",
+      period: "(F) 2021.12.15 ~ 17 / (B) 2022.01.11 ~ 13",
+      people: "1명",
+      position: "프론트엔드, 백엔드",
+      skill: "HTML, CSS, JavaScript, jQuery, Spring Framework, MySQL",
       function: ["반응형", "스크롤", "스크롤"],
+      projectData: <Paris />,
     },
     crain: {
       title: "크레인 고장진단 시스템",
@@ -56,7 +64,8 @@ function Detail() {
       people: "3명",
       position: "모니터링 화면 구현(프론트엔드, 백엔드), 머신러닝",
       skill: "JSP, HTML, CSS, JavaScript, jQuery, MySQL, Python",
-      function: ["반응형", "스크롤", "스크롤"],
+      function: ["화면 크기에 따라 변하는 반응형 웹으로 구현", "데이터 분석 결과 시각화 및 데이터 성향에 따른 다양한 차트 제공", "크레인의 결함 유무 및 위치를 파악하는 학습 모델 개발 (오픈소스 활용)"],
+      projectData: <Carin />,
     },
   };
 
@@ -123,7 +132,10 @@ function Detail() {
             </p>
           </div>
         </div>
-        <div className="bottopm_wrap">따로 빼기 - 프로젝트마다 만들기</div>
+        <div className="bottopm_wrap">
+          <h3>세부 내용</h3>
+          {project.projectData}
+        </div>
       </div>
     </div>
   );
