@@ -72,6 +72,10 @@
       p {
         margin-bottom: 20px;
 
+        &:last-child {
+          margin-bottom: 0;
+        }
+
         .name {
           display: inline-block;
           width: 100px;
@@ -82,9 +86,9 @@
         }
       }
 
+      p.position,
       p.function {
         display: flex;
-        margin-bottom: 0;
 
         .value {
           span {
@@ -102,6 +106,7 @@
 
   .bottopm_wrap {
     margin-top: 65px;
+    // padding-bottom: 30px;
 
     h3 {
       margin-bottom: 40px;

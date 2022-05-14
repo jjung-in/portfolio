@@ -22,7 +22,7 @@ function Detail() {
       description: "개인 포트폴리오 용도로 제작한 웹사이트입니다. React ... 개인 포트폴리오 용도로 제작한 웹사이트입니다. React ...",
       period: "2022.05 ~ ",
       people: "1명",
-      position: "프론트엔드",
+      position: ["프론트엔드"],
       skill: "React, JavaScript, SCSS",
       function: ["반응형", "스크롤", "스크롤"],
     },
@@ -51,9 +51,8 @@ function Detail() {
       description: "멀티캠퍼스 지능형 웹 서비스 풀스택 개발 과정에서 미니 프로젝트로 '케이크 픽업 예약' 사이트를 제작했습니다. 파리바게트 홈페이지를 참고했으며, 케이크 및 예약 옵션을 선택하여 케이크를 픽업 예약하는 서비스를 구현했습니다.",
       period: "(F) 2021.12.15 ~ 17 / (B) 2022.01.11 ~ 13",
       people: "1명",
-      position: "프론트엔드, 백엔드",
+      position: ["프론트엔드, 백엔드"],
       skill: "HTML, CSS, JavaScript, jQuery, Spring Framework, MySQL",
-      function: ["반응형", "스크롤", "스크롤"],
       projectData: <Paris />,
     },
     crain: {
@@ -62,7 +61,7 @@ function Detail() {
       description: "대학교 졸업 프로젝트로 기업과 연계하여 '크레인 고장진단 시스템'을 개발했습니다. 이 시스템은 스마트 센서를 통해 크레인의 이상징후를 인지하고 적시에 대응할 수 있도록 실시간 모니터링 기능을 제공하는 시스템입니다.",
       period: "2018.09 ~ 2019.04",
       people: "3명",
-      position: "모니터링 화면 구현(프론트엔드, 백엔드), 머신러닝",
+      position: ["모니터링 화면 구현 (프론트엔드, 백엔드)", "머신러닝"],
       skill: "JSP, HTML, CSS, JavaScript, jQuery, MySQL, Python",
       function: ["화면 크기에 따라 변하는 반응형 웹으로 구현", "데이터 분석 결과 시각화 및 데이터 성향에 따른 다양한 차트 제공", "크레인의 결함 유무 및 위치를 파악하는 학습 모델 개발 (오픈소스 활용)"],
       projectData: <Carin />,
@@ -114,22 +113,26 @@ function Detail() {
               <span className="name"># 인원</span>
               <span className="value">{project.people}</span>
             </p>
-            <p>
+            <p className="position">
               <span className="name"># 역할</span>
-              <span className="value">{project.position}</span>
+              <span className="value">
+                {project.position.map((element, index) => {
+                  return <span key={index}>{element}</span>;
+                })}
+              </span>
             </p>
             <p>
               <span className="name"># 사용기술</span>
               <span className="value">{project.skill}</span>
             </p>
-            <p className="function">
+            {/* <p className="function">
               <span className="name"># 주요기능</span>
               <span className="value">
                 {project.function.map((element, index) => {
                   return <span key={index}>{element}</span>;
                 })}
               </span>
-            </p>
+            </p> */}
           </div>
         </div>
         <div className="bottopm_wrap">

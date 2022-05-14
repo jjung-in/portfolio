@@ -10,6 +10,27 @@ import mypage from "../../assets/img_paris/mypage.gif";
 function Paris() {
   return (
     <div id="projectData">
+      <div className="function_wrap">
+        <ul>
+          <b>회원</b>
+          <li>회원가입</li>
+          <li>로그인ㆍ로그아웃</li>
+          <li>아이디ㆍ비밀번호 찾기</li>
+        </ul>
+        <ul>
+          <b>예약서비스</b>
+          <li>케이크 전체 조회</li>
+          <li>카테고리별 케이크 조회</li>
+          <li>케이크 상세정보 모달창</li>
+          <li>케이크 예약 옵션 선택</li>
+        </ul>
+        <ul>
+          <b>마이페이지</b>
+          <li>예약 현황 조회</li>
+          <li>예약 취소</li>
+          <li>예약 취소 불가 및 마감 표시</li>
+        </ul>
+      </div>
       <div className="descritpion_wrap">
         <img src={join} alt="회원가입" />
         <div className="text_box">
@@ -19,7 +40,7 @@ function Paris() {
       <div className="descritpion_wrap">
         <img src={login} alt="로그인" />
         <div className="text_box">
-          <b>로그인</b>
+          <b>로그인ㆍ로그아웃</b>
         </div>
       </div>
       <div className="descritpion_wrap">
