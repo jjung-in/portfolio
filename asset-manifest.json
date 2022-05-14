@@ -1,30 +1,39 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.2d55542d.css",
-    "main.js": "/portfolio/static/js/main.72aba922.js",
+    "main.css": "/portfolio/static/css/main.96d412d0.css",
+    "main.js": "/portfolio/static/js/main.912624ea.js",
+    "static/media/main.gif": "/portfolio/static/media/main.96c9df066af3a835b030.gif",
     "static/media/NotoSansKR-Bold.otf": "/portfolio/static/media/NotoSansKR-Bold.c252383c4f70753be0e7.otf",
     "static/media/NotoSansKR-Regular.otf": "/portfolio/static/media/NotoSansKR-Regular.e1aa54c04a18648e6468.otf",
+    "static/media/main2.gif": "/portfolio/static/media/main2.d3e83a60f8f5b821b7e5.gif",
+    "static/media/thumbnail.png": "/portfolio/static/media/thumbnail.515d0efc17f3085a4896.png",
     "static/media/doran_preview.png": "/portfolio/static/media/doran_preview.b30268bad6858e461301.png",
-    "static/media/paris_preview.png": "/portfolio/static/media/paris_preview.b68bb8cd00c6e5eb10f3.png",
+    "static/media/login.gif": "/portfolio/static/media/login.d0629898f60a95844b56.gif",
     "static/media/oramyun_preview.png": "/portfolio/static/media/oramyun_preview.c0a05ee59ca993ade584.png",
+    "static/media/join.gif": "/portfolio/static/media/join.717ab0d0c4f24d8cd8b3.gif",
     "static/media/Montserrat-Bold.ttf": "/portfolio/static/media/Montserrat-Bold.63fae500fdcf19ce83d4.ttf",
     "static/media/Montserrat-Regular.ttf": "/portfolio/static/media/Montserrat-Regular.ac98a5f5ca71180fe293.ttf",
+    "static/media/reserve.gif": "/portfolio/static/media/reserve.3c97b7ff2b5ef357a6c3.gif",
+    "static/media/crain01.png": "/portfolio/static/media/crain01.40415012396061889b90.png",
     "static/media/portfolio_preview.png": "/portfolio/static/media/portfolio_preview.496134eeeb4666a85501.png",
     "static/media/chic_preview.png": "/portfolio/static/media/chic_preview.1969baffff70a8e7d071.png",
     "static/media/itsme2.png": "/portfolio/static/media/itsme2.390ecea1dd9c9d839042.png",
+    "static/media/crain03.png": "/portfolio/static/media/crain03.2ffab815c2772ba243bb.png",
     "static/media/crain_preview.png": "/portfolio/static/media/crain_preview.0d00730f0dcc8fcd8c6f.png",
+    "static/media/crain02.png": "/portfolio/static/media/crain02.2c14a9c88f4404d5701d.png",
     "static/media/scss.png": "/portfolio/static/media/scss.95b95881f872d00e7e7b.png",
     "static/media/itsme.jpg": "/portfolio/static/media/itsme.d31e1eb7a06ce37295dc.jpg",
     "static/media/cpp.png": "/portfolio/static/media/cpp.954f6732266485dfa611.png",
+    "static/media/mypage.gif": "/portfolio/static/media/mypage.22c58bfa240656faaad9.gif",
     "static/media/c.png": "/portfolio/static/media/c.d083731589e745941c43.png",
     "static/media/java.png": "/portfolio/static/media/java.5ddc009d023203f9b3f8.png",
     "static/media/oracle.png": "/portfolio/static/media/oracle.9156326c725803e9b7ba.png",
     "index.html": "/portfolio/index.html",
-    "main.2d55542d.css.map": "/portfolio/static/css/main.2d55542d.css.map",
-    "main.72aba922.js.map": "/portfolio/static/js/main.72aba922.js.map"
+    "main.96d412d0.css.map": "/portfolio/static/css/main.96d412d0.css.map",
+    "main.912624ea.js.map": "/portfolio/static/js/main.912624ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d55542d.css",
-    "static/js/main.72aba922.js"
+    "static/css/main.96d412d0.css",
+    "static/js/main.912624ea.js"
   ]
 }
