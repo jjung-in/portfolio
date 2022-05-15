@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Project.scss";
-import portfolio_preview from "../../assets/img_portfolio/portfolio_preview.png";
-import oramyun_preview from "../../assets/img_oramyun/oramyun_preview.png";
-import doran_preview from "../../assets/img_doran/doran_preview.png";
-import chic_preview from "../../assets/img_chic/chic_preview.png";
+import portfolio_preview from "../../assets/img_portfolio/thumbnail.png";
+import oramyun_preview from "../../assets/img_oramyun/thumbnail.png";
+import doran_preview from "../../assets/img_doran/thumbnail.png";
+import chic_preview from "../../assets/img_chic/thumbnail.png";
 import paris_preview from "../../assets/img_paris/thumbnail.png";
-import crain_preview from "../../assets/img_crain/crain_preview.png";
+import crain_preview from "../../assets/img_crain/thumbnail.png";
 
 function Project() {
   return (

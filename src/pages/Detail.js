@@ -3,13 +3,17 @@ import { useParams, useNavigate } from "react-router-dom";
 import "./Detail.scss";
 import Header2 from "../components/Header/Header2";
 import TopBtn from "../components/TopBtn/TopBtn";
-import portfolio_preview from "../assets/img_portfolio/portfolio_preview.png";
-import oramyun_preview from "../assets/img_oramyun/oramyun_preview.png";
-import doran_preview from "../assets/img_doran/doran_preview.png";
-import chic_preview from "../assets/img_chic/chic_preview.png";
+import portfolio_preview from "../assets/img_portfolio/thumbnail.png";
+import oramyun_preview from "../assets/img_oramyun/thumbnail.png";
+import todo_preview from "../assets/img_todolist/thumbnail.png";
+import doran_preview from "../assets/img_doran/thumbnail.png";
+import chic_preview from "../assets/img_chic/thumbnail.png";
 import paris_preview from "../assets/img_paris/thumbnail.png";
-import crain_preview from "../assets/img_crain/crain_preview.png";
+import megabox_preview from "../assets/img_megabox/thumbnail.png";
+import crain_preview from "../assets/img_crain/thumbnail.png";
+import Todolist from "../components/ProjectData/Todolist";
 import Paris from "../components/ProjectData/Paris";
+import Megabox from "../components/ProjectData/Megabox";
 import Carin from "../components/ProjectData/Crain";
 
 function Detail() {
@@ -24,25 +28,33 @@ function Detail() {
       people: "1명",
       position: ["프론트엔드"],
       skill: "React, JavaScript, SCSS",
-      function: ["반응형", "스크롤", "스크롤"],
     },
     oramyun: {
       title: "오늘의 라면",
       previewImg: oramyun_preview,
       description: "Frontend Engineer @ Laftel Inc. 재밌는 것만 골라서 하는 개발자",
-      function: ["반응형", "스크롤", "스크롤"],
+    },
+    todolist: {
+      title: "투두리스트",
+      previewImg: todo_preview,
+      githubLink: "https://github.com/jjung-in/react-todolist",
+      noteLink: "https://excellent-peak-d3a.notion.site/React-To-Do-List-37bc9040246f4e69a793a6f15beb82c1",
+      description: "React 학습 차원에서 간단하게 구현한 투두리스트 앱입니다. 컴포넌트를 분리하여 재사용이 가능하도록 했고, useState, useEffect 등의 Hooks을 통해 상태 관리를 했습니다.",
+      period: "2022.04",
+      people: "1명",
+      position: ["프론트엔드"],
+      skill: "React",
+      projectData: <Todolist />,
     },
     doran: {
       title: "도란도란",
       previewImg: doran_preview,
       description: "전래동화의 주인공",
-      function: ["반응형", "스크롤", "스크롤"],
     },
     chic: {
       title: "칰칰폭폭",
       previewImg: chic_preview,
       description: "전래동화의 주인공",
-      function: ["반응형", "스크롤", "스크롤"],
     },
     paris: {
       title: "케이크 픽업 예약 서비스",
@@ -55,6 +67,18 @@ function Detail() {
       skill: "HTML, CSS, JavaScript, jQuery, Spring Framework, MySQL",
       projectData: <Paris />,
     },
+    megabox: {
+      title: "메가박스",
+      previewImg: megabox_preview,
+      viewLink: "https://jjung-in.github.io/clone-megabox",
+      githubLink: "https://github.com/jjung-in/clone-megabox",
+      description: "HTML, CSS, JavaScript의 기본 개념을 익힌 후, 웹 개발에 대한 이해를 높이고자 [WEBSTORYBOY - 메가박스 사이트 만들기] 강의를 보며 따라 만든 사이트입니다.",
+      period: "2021.10",
+      people: "1명",
+      position: ["프론트엔드"],
+      skill: "HTML, CSS, JavaScript, jQuery",
+      projectData: <Megabox />,
+    },
     crain: {
       title: "크레인 고장진단 시스템",
       previewImg: crain_preview,
@@ -63,7 +87,6 @@ function Detail() {
       people: "3명",
       position: ["모니터링 화면 구현 (프론트엔드, 백엔드)", "머신러닝"],
       skill: "JSP, HTML, CSS, JavaScript, jQuery, MySQL, Python",
-      function: ["화면 크기에 따라 변하는 반응형 웹으로 구현", "데이터 분석 결과 시각화 및 데이터 성향에 따른 다양한 차트 제공", "크레인의 결함 유무 및 위치를 파악하는 학습 모델 개발 (오픈소스 활용)"],
       projectData: <Carin />,
     },
   };
@@ -103,6 +126,13 @@ function Detail() {
                   </a>
                 </li>
               )}
+              {project.noteLink && (
+                <li>
+                  <a href={project.noteLink} target="_blank" rel="noopener noreferrer">
+                    NOTE
+                  </a>
+                </li>
+              )}
             </ul>
             <p className="description">{project.description}</p>
             <p>
@@ -125,14 +155,6 @@ function Detail() {
               <span className="name"># 사용기술</span>
               <span className="value">{project.skill}</span>
             </p>
-            {/* <p className="function">
-              <span className="name"># 주요기능</span>
-              <span className="value">
-                {project.function.map((element, index) => {
-                  return <span key={index}>{element}</span>;
-                })}
-              </span>
-            </p> */}
           </div>
         </div>
         <div className="bottopm_wrap">
