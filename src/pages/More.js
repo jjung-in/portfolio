@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./More.scss";
 import Header2 from "../components/Header/Header2";
+import BackBtn from "../components/BackBtn/BackBtn";
 import TopBtn from "../components/TopBtn/TopBtn";
 import portfolio_preview from "../assets/img_portfolio/thumbnail.png";
 import oramyun_preview from "../assets/img_oramyun/thumbnail.png";
@@ -61,6 +62,7 @@ function More() {
       <Header2 />
       <div className="container">
         <h2>PROJECT</h2>
+        <BackBtn />
         <TopBtn />
         <ul>
           {projectList.map((element, index) => {

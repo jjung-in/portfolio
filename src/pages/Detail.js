@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import "./Detail.scss";
 import Header2 from "../components/Header/Header2";
+import BackBtn from "../components/BackBtn/BackBtn";
 import TopBtn from "../components/TopBtn/TopBtn";
 import portfolio_preview from "../assets/img_portfolio/thumbnail.png";
 import oramyun_preview from "../assets/img_oramyun/thumbnail.png";
@@ -103,19 +104,12 @@ function Detail() {
   const { name } = useParams();
   const project = projectData[name];
 
-  /* 뒤로가기 버튼 */
-  const navigate = useNavigate();
-
   return (
     <div id="detail">
       <Header2 />
       <div className="container">
         <TopBtn />
-        <button
-          className="backBtn"
-          onClick={() => {
-            navigate("/project");
-          }}></button>
+        <BackBtn />
         <h2>{project.title}</h2>
         <div className="top_wrap">
           <img src={project.previewImg} alt={project.title} />
