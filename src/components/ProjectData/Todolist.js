@@ -1,12 +1,13 @@
 import React from "react";
 import "./ProjectData.scss";
+import ImgModal from "../ImgModal/ImgModal";
 import todolist from "../../assets/img_todolist/todolist.gif";
 
-function Todolist() {
+function Todolist({ clickedImg, setClickedImg, imgClick }) {
   return (
     <div id="projectData">
       <div className="descritpion_wrap">
-        <img src={todolist} alt="투두리스트" />
+        <img src={todolist} alt="투두리스트" onClick={imgClick} />
         <div className="text_box">
           <b>투두리스트</b>
           <ul>
@@ -14,6 +15,7 @@ function Todolist() {
           </ul>
         </div>
       </div>
+      <ImgModal clickedImg={clickedImg} setClickedImg={setClickedImg} />
     </div>
   );
 }

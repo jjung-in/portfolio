@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./Detail.scss";
 import Header2 from "../components/Header/Header2";
@@ -17,6 +17,15 @@ import Megabox from "../components/ProjectData/Megabox";
 import Carin from "../components/ProjectData/Crain";
 
 function Detail() {
+  /* 이미지 모달 */
+  const [clickedImg, setClickedImg] = useState(null);
+
+  const imgClick = (event) => {
+    console.log(event.target.src);
+    setClickedImg(event.target.src);
+  };
+
+  /* 프로젝트 정보 */
   const projectData = {
     portfolio: {
       title: "Jungin's 포트폴리오",
@@ -44,7 +53,7 @@ function Detail() {
       people: "1명",
       position: ["프론트엔드"],
       skill: "React",
-      projectData: <Todolist />,
+      projectData: <Todolist clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     doran: {
       title: "도란도란",
@@ -65,7 +74,7 @@ function Detail() {
       people: "1명",
       position: ["프론트엔드, 백엔드"],
       skill: "HTML, CSS, JavaScript, jQuery, Spring Framework, MySQL",
-      projectData: <Paris />,
+      projectData: <Paris clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     megabox: {
       title: "메가박스",
@@ -77,7 +86,7 @@ function Detail() {
       people: "1명",
       position: ["프론트엔드"],
       skill: "HTML, CSS, JavaScript, jQuery",
-      projectData: <Megabox />,
+      projectData: <Megabox clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     crain: {
       title: "크레인 고장진단 시스템",
@@ -87,7 +96,7 @@ function Detail() {
       people: "3명",
       position: ["모니터링 화면 구현 (프론트엔드, 백엔드)", "머신러닝"],
       skill: "JSP, HTML, CSS, JavaScript, jQuery, MySQL, Python",
-      projectData: <Carin />,
+      projectData: <Carin clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
   };
 

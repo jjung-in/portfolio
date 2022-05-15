@@ -45,14 +45,14 @@ function More() {
       link: "paris",
     },
     {
-      title: "크레인 고장진단 시스템",
-      img: crain_preview,
-      link: "crain",
-    },
-    {
       title: "메가박스",
       img: megabox_preview,
       link: "megabox",
+    },
+    {
+      title: "크레인 고장진단 시스템",
+      img: crain_preview,
+      link: "crain",
     },
   ];
 

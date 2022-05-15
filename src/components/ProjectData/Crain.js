@@ -1,10 +1,12 @@
 import React from "react";
 import "./ProjectData.scss";
+import ImgModal from "../ImgModal/ImgModal";
 import crain01 from "../../assets/img_crain/crain01.png";
 import crain02 from "../../assets/img_crain/crain02.png";
 import crain03 from "../../assets/img_crain/crain03.png";
 
-function Carin() {
+function Carin({ clickedImg, setClickedImg, imgClick }) {
+
   return (
     <div id="projectData">
       <div className="text_wrap">
@@ -15,10 +17,11 @@ function Carin() {
         </ul>
       </div>
       <div className="img_wrap">
-        <img src={crain01} alt="크레인" />
-        <img src={crain02} alt="크레인" />
-        <img src={crain03} alt="크레인" />
+        <img src={crain01} alt="크레인" onClick={imgClick} />
+        <img src={crain02} alt="크레인" onClick={imgClick} />
+        <img src={crain03} alt="크레인" onClick={imgClick} />
       </div>
+      <ImgModal clickedImg={clickedImg} setClickedImg={setClickedImg} />
     </div>
   );
 }

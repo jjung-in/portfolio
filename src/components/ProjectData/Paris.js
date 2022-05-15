@@ -1,5 +1,6 @@
 import React from "react";
 import "./ProjectData.scss";
+import ImgModal from "../ImgModal/ImgModal";
 import join from "../../assets/img_paris/join.gif";
 import login from "../../assets/img_paris/login.gif";
 import main from "../../assets/img_paris/main.gif";
@@ -7,7 +8,7 @@ import main2 from "../../assets/img_paris/main2.gif";
 import reserve from "../../assets/img_paris/reserve.gif";
 import mypage from "../../assets/img_paris/mypage.gif";
 
-function Paris() {
+function Paris({ clickedImg, setClickedImg, imgClick }) {
   return (
     <div id="projectData">
       <div className="function_wrap">
@@ -32,19 +33,19 @@ function Paris() {
         </ul>
       </div>
       <div className="descritpion_wrap">
-        <img src={join} alt="회원가입" />
+        <img src={join} alt="회원가입" onClick={imgClick} />
         <div className="text_box">
           <b>회원가입</b>
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={login} alt="로그인" />
+        <img src={login} alt="로그인" onClick={imgClick} />
         <div className="text_box">
           <b>로그인ㆍ로그아웃</b>
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={main} alt="메인페이지" />
+        <img src={main} alt="메인페이지" onClick={imgClick} />
         <div className="text_box">
           <b>메인 페이지</b>
           <ul>
@@ -54,7 +55,7 @@ function Paris() {
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={main2} alt="모달창" />
+        <img src={main2} alt="모달창" onClick={imgClick} />
         <div className="text_box">
           <b>메인 페이지 모달창</b>
           <ul>
@@ -65,7 +66,7 @@ function Paris() {
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={reserve} alt="예약하기" />
+        <img src={reserve} alt="예약하기" onClick={imgClick} />
         <div className="text_box">
           <b>예약 페이지</b>
           <ul>
@@ -75,7 +76,7 @@ function Paris() {
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={mypage} alt="마이페이지" />
+        <img src={mypage} alt="마이페이지" onClick={imgClick} />
         <div className="text_box">
           <b>마이 페이지</b>
           <ul>
@@ -84,6 +85,7 @@ function Paris() {
           </ul>
         </div>
       </div>
+      <ImgModal clickedImg={clickedImg} setClickedImg={setClickedImg} />
     </div>
   );
 }
