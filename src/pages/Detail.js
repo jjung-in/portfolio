@@ -13,6 +13,8 @@ import paris_preview from "../assets/img_paris/thumbnail.png";
 import megabox_preview from "../assets/img_megabox/thumbnail.png";
 import crain_preview from "../assets/img_crain/thumbnail.png";
 import Todolist from "../components/ProjectData/Todolist";
+import Doran from "../components/ProjectData/Doran";
+import Chic from "../components/ProjectData/Chic";
 import Paris from "../components/ProjectData/Paris";
 import Megabox from "../components/ProjectData/Megabox";
 import Carin from "../components/ProjectData/Crain";
@@ -34,15 +36,23 @@ function Detail() {
       viewLink: "https://jjung-in.github.io/portfolio",
       githubLink: "https://github.com/jjung-in/portfolio",
       description: "개인 포트폴리오 용도로 제작한 웹사이트입니다. React ... 개인 포트폴리오 용도로 제작한 웹사이트입니다. React ...",
-      period: "2022.05 ~ ",
+      period: "2022.05",
       people: "1명",
       position: ["프론트엔드"],
       skill: "React, JavaScript, SCSS",
+      projectData: <Doran clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     oramyun: {
       title: "오늘의 라면",
       previewImg: oramyun_preview,
-      description: "Frontend Engineer @ Laftel Inc. 재밌는 것만 골라서 하는 개발자",
+      // viewLink: "https://jjung-in.github.io/clone-megabox",
+      githubLink: "https://github.com/jjung-in/clone-oramyun",
+      description: "리액트 + 사이트 선택 이유",
+      period: "2022.05",
+      people: "1명",
+      position: ["프론트엔드"],
+      skill: "React, JavaScript, SCSS",
+      projectData: <Doran clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     todolist: {
       title: "투두리스트",
@@ -59,12 +69,24 @@ function Detail() {
     doran: {
       title: "도란도란",
       previewImg: doran_preview,
-      description: "전래동화의 주인공",
+      githubLink: "https://github.com/jhatab/DORAN",
+      description: "멀티캠퍼스 지능형 웹 서비스 풀스택 개발 과정에서 파이널 프로젝트로 'Vertical SNS'를 제작했습니다. 특정 주제에 관심있는 사람들끼리 모여 그룹을 만들고 관심 분야를 공유하는 SNS입니다. 네이버 밴드의 기능을 참고하여 구현했습니다.",
+      period: "2022.02.16 ~ 2022.03.20",
+      people: "3명",
+      position: ["프론트엔드, 백엔드", "- 회원ㆍ그룹ㆍ게시물 서비스 구현", "- 채팅ㆍ알림ㆍ검색 서비스 구현"],
+      skill: "HTML, CSS, JavaScript, jQuery, Spring Boot, MySQL",
+      projectData: <Doran clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     chic: {
       title: "칰칰폭폭",
       previewImg: chic_preview,
-      description: "전래동화의 주인공",
+      githubLink: "https://github.com/lee-goeun/semi-project",
+      description: "멀티캠퍼스 지능형 웹 서비스 풀스택 개발 과정에서 세미 프로젝트로 '배달 공유 커뮤니티' 사이트를 제작했습니다. 이 프로젝트는 배달료와 최소 금액에 대한 비용 부담을 줄이고 정보 공유를 하기 위한 목적으로 개발했습니다.",
+      period: "2022.01.21 ~ 2022.02.14",
+      people: "3명",
+      position: ["프론트엔드, 백엔드", "- 후기게시판 서비스 구현", "- 모집게시판 서비스 구현 (목록 페이지)"],
+      skill: "HTML, CSS, JavaScript, jQuery, Spring Framework, MySQL",
+      projectData: <Chic clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     paris: {
       title: "케이크 픽업 예약 서비스",
@@ -95,7 +117,7 @@ function Detail() {
       description: "대학교 졸업 프로젝트로 기업과 연계하여 '크레인 고장진단 시스템'을 개발했습니다. 이 시스템은 스마트 센서를 통해 크레인의 이상징후를 인지하고 적시에 대응할 수 있도록 실시간 모니터링 기능을 제공하는 시스템입니다.",
       period: "2018.09 ~ 2019.04",
       people: "3명",
-      position: ["모니터링 화면 구현 (프론트엔드, 백엔드)", "머신러닝"],
+      position: ["프론트엔드, 백엔드 - 모니터링 화면 구현", "머신러닝"],
       skill: "JSP, HTML, CSS, JavaScript, jQuery, MySQL, Python",
       projectData: <Carin clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },

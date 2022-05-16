@@ -33,6 +33,10 @@
 
       li {
         list-style: disc;
+
+        &.other {
+          color: #bbb;
+        }
       }
     }
   }
@@ -49,7 +53,7 @@
       box-sizing: border-box;
       cursor: pointer;
     }
-    
+
     .text_box {
       width: 630px;
       padding: 25px 30px;
