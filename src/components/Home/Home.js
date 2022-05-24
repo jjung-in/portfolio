@@ -23,6 +23,11 @@ function Home() {
     <div id="home">
       <div className="container home_inwrap">
         <p>{text}</p>
+        <span>
+          프론트엔드 개발자
+          <br />
+          고정인입니다.
+        </span>
       </div>
     </div>
   );
