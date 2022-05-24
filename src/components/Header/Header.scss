@@ -30,7 +30,6 @@
         position: relative;
         margin-left: 50px;
         padding: 15px 0;
-        font-size: 13px;
         cursor: pointer;
 
         &::after {
@@ -50,6 +49,50 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #header {
+    height: 60px;
+
+    .header_inwrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    h1 {
+      a {
+        font-size: 16px;
+        font-family: "Montserrat-Bold";
+      }
+    }
+
+    #nav {
+      ul {
+        display: flex;
+
+        li {
+          margin-left: 30px;
+
+          a {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    position: static;
+    height: 50px;
+
+    #nav {
+      display: none;
     }
   }
 }

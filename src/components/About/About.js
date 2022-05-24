@@ -38,7 +38,28 @@ function About() {
             </div>
             <div className="skill_box">
               <span className="title">Skills</span>
-              <ul>
+              <ul className="mini">
+                <li>
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>jQuery</span>
+                  <span>SCSS</span>
+                  <span>React</span>
+                </li>
+                <li>
+                  <span>Spring</span>
+                  <span>Spring Boot</span>
+                  <span>Orcle</span>
+                  <span>MySQL</span>
+                </li>
+                <li>
+                  <span>JAVA</span>
+                  <span>C</span>
+                  <span>C++</span>
+                </li>
+              </ul>
+              <ul className="big">
                 <li>
                   <p>
                     <span className="skill-img html"></span>
@@ -102,15 +123,11 @@ function About() {
           </div>
           <div className="right_wrap">
             <h2>About Me</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula dui, pellentesque et sapien non, vestibulum efficitur diam. Vestibulum vel faucibus nibh. Vivamus vitae ex aliquam, posuere massa ut, interdum est. Morbi at neque sit amet dolor faucibus vestibulum.
-              <br />
-              <br />
-              Quisque ultrices, justo sed accumsan venenatis, libero sem aliquet lacus, sit amet lacinia massa tellus ac ante. Sed sed varius diam. Suspendisse nulla est, consectetur at velit ut, condimentum cursus neque.
-              <br />
-              <br />
-              Sed aliquet gravida nulla, vel aliquam purus facilisis sed. Maecenas ligula velit, hendrerit nec ante ut, blandit tempus lacus. Suspendisse potenti. Phasellus congue, velit sed fermentum aliquet, lorem dui ultrices neque, eget sagittis eros ipsum non quam. Aenean eget blandit lorem. Integer fermentum ut felis vitae facilisis.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ligula dui, pellentesque et sapien non, vestibulum efficitur diam. Vestibulum vel faucibus nibh. Vivamus vitae ex aliquam, posuere massa ut, interdum est. Morbi at neque sit amet dolor faucibus vestibulum.</p>
+            <br />
+            <p>Quisque ultrices, justo sed accumsan venenatis, libero sem aliquet lacus, sit amet lacinia massa tellus ac ante. Sed sed varius diam. Suspendisse nulla est, consectetur at velit ut, condimentum cursus neque.</p>
+            <br />
+            <p> Sed aliquet gravida nulla, vel aliquam purus facilisis sed. Maecenas ligula velit, hendrerit nec ante ut, blandit tempus lacus. Suspendisse potenti. Phasellus congue, velit sed fermentum aliquet, lorem dui ultrices neque, eget sagittis eros ipsum non quam. Aenean eget blandit lorem. Integer fermentum ut felis vitae facilisis.</p>
           </div>
         </div>
       </div>

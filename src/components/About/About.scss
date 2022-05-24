@@ -78,7 +78,7 @@
           font-family: "NotoSansKR-Bold";
         }
 
-        ul {
+        ul.big {
           li {
             display: flex;
             margin-bottom: 18px;
@@ -111,6 +111,10 @@
               }
             }
           }
+        }
+
+        ul.mini {
+          display: none;
         }
       }
     }
@@ -209,7 +213,167 @@
   #about {
     .about_box {
       height: 530px;
-      background-color: antiquewhite;
+      padding: 40px 50px;
+
+      .left_wrap {
+        .skill_box {
+          margin-top: 35px;
+
+          ul.big {
+            li {
+              margin-bottom: 13px;
+
+              p {
+                .skill-img {
+                  height: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
+  }
+
+  .skill-img {
+    &.html {
+      background-size: 30px;
+    }
+
+    &.css {
+      background-size: 30px;
+    }
+
+    &.js {
+      background-size: 32px;
+    }
+
+    &.jq {
+      background-size: 35px;
+    }
+
+    &.scss {
+      background-size: 37px;
+    }
+
+    &.react {
+      background-size: 35px;
+    }
+
+    &.spring {
+      background-size: 47px;
+    }
+
+    &.springb {
+      background-size: 35px;
+    }
+
+    &.oracle {
+      background-size: 70px;
+    }
+
+    &.mysql {
+      background-size: 58px;
+    }
+
+    &.java {
+      background-size: 45px;
+    }
+
+    &.c {
+      background-size: 34px;
+    }
+
+    &.cpp {
+      background-size: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #about {
+    .about_box {
+      .left_wrap {
+        width: 63%;
+      }
+
+      .right_wrap {
+        max-width: 50%;
+
+        h2 {
+          margin-bottom: 25px;
+        }
+
+        p {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #about {
+    .about_box {
+      .left_wrap {
+        .skill_box {
+          ul.big {
+            display: none;
+          }
+
+          ul.mini {
+            display: block;
+          }
+        }
+      }
+
+      .right_wrap {
+        width: 37%;
+
+        h2 {
+          margin-bottom: 25px;
+        }
+
+        p {
+          &:last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #about {
+    height: calc(100vh - 60px);
+    padding-top: 60px;
+
+    .about_box {
+      .left_wrap {
+        .skill_box {
+          ul.big {
+            display: none;
+          }
+
+          ul.mini {
+            display: block;
+          }
+        }
+      }
+
+      .right_wrap {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #about {
+    height: calc(100vh - 50px);
+    padding-top: 0;
   }
 }
