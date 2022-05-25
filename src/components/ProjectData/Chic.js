@@ -82,7 +82,7 @@ function Chic({ clickedImg, setClickedImg, imgClick }) {
         <div className="text_box">
           <b>마이 페이지</b>
           <ul>
-            <li>마이페이지에서 회원 정보를 수정할 수 있습니다.</li>
+            <li>마이 페이지에서 회원 정보를 수정할 수 있습니다.</li>
           </ul>
         </div>
       </div>

@@ -1,7 +1,15 @@
 import React from "react";
 import "./ProjectData.scss";
 import ImgModal from "../ImgModal/ImgModal";
-import doran from "../../assets/img_chic/thumbnail.png";
+import join from "../../assets/img_doran/join.gif";
+import login from "../../assets/img_doran/login.gif";
+import main from "../../assets/img_doran/main.gif";
+import category from "../../assets/img_doran/category.gif";
+import mypage from "../../assets/img_doran/mypage.gif";
+import group from "../../assets/img_doran/group.gif";
+import group_join from "../../assets/img_doran/group_join.gif";
+import group_setting from "../../assets/img_doran/group_setting.gif";
+import search from "../../assets/img_doran/search.gif";
 
 function Doran({ clickedImg, setClickedImg, imgClick }) {
   return (
@@ -68,21 +76,113 @@ function Doran({ clickedImg, setClickedImg, imgClick }) {
         </ul>
       </div>
       <div className="descritpion_wrap">
-        <img src={doran} alt="회원가입" onClick={imgClick} />
+        <img src={join} alt="회원가입" onClick={imgClick} />
         <div className="text_box">
           <b>회원가입</b>
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={doran} alt="로그인ㆍ로그아웃" onClick={imgClick} />
+        <img src={login} alt="로그인ㆍ로그아웃" onClick={imgClick} />
         <div className="text_box">
           <b>로그인ㆍ로그아웃</b>
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={doran} alt="메인 페이지" onClick={imgClick} />
+        <img src={main} alt="메인 페이지" onClick={imgClick} />
         <div className="text_box">
           <b>메인 페이지</b>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={category} alt="카테고리 페이지" onClick={imgClick} />
+        <div className="text_box">
+          <b>카테고리 페이지</b>
+          <ul>
+            <li>카테고리 페이지에서 그룹 카테고리를 생성ㆍ삭제할 수 있습니다.</li>
+            <li>관리자만 카테고리 페이지에 들어갈 수 있습니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={mypage} alt="마이 페이지" onClick={imgClick} />
+        <div className="text_box">
+          <b>마이 페이지</b>
+          <ul>
+            <li>마이페이지에서 가입 그룹을 확인하고 회원 정보를 수정할 수 있습니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={group} alt="그룹 페이지" onClick={imgClick} />
+        <div className="text_box">
+          <b>그룹 페이지 ①</b>
+          <ul>
+            <li>전체 그룹과 카테고리별 그룹을 조회할 수 있습니다.</li>
+            <li>그룹을 생성할 수 있습니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={group_join} alt="그룹 페이지" onClick={imgClick} />
+        <div className="text_box">
+          <b>그룹 페이지 ②</b>
+          <ul>
+            <li>가입하기 버튼을 누르면 가입 신청이 되며, 그룹 관리자에게 알림이 전송됩니다.</li>
+            <li>이미 가입된 회원은 가입하기 버튼대신 그룹 설정 버튼이 나타납니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={group_join} alt="그룹 페이지" onClick={imgClick} />
+        <div className="text_box">
+          <b>그룹 페이지 ③</b>
+          <ul>
+            <li>피드를 작성ㆍ수정ㆍ삭제할 수 있습니다.</li>
+            <li>피드 공개 수준을 설정할 수 있습니다.</li>
+            <li>태그, 이미지 유효성</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={group_join} alt="그룹 페이지" onClick={imgClick} />
+        <div className="text_box">
+          <b>그룹 페이지 ④</b>
+          <ul>
+            <li>댓글 작성, 수정, 삭제</li>
+            <li>추천</li>
+            <li>인기 게시물 확인 (일주일 좋아요)</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={group_setting} alt="그룹 설정 페이지" onClick={imgClick} />
+        <div className="text_box">
+          <b>그룹 설정 페이지</b>
+          <ul>
+            <li>그룹 설정 페이지에서 그룹 관리자는 그룹과 회원을 관리할 수 있습니다.</li>
+            <li>일반 회원은 그룹 회원 목록을 조회할 수 있고, 그룹을 탈퇴할 수 있습니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={search} alt="전체 검색" onClick={imgClick} />
+        <div className="text_box">
+          <b>전체 검색</b>
+          <ul>
+            <li>전체 그룹ㆍ피드ㆍ태그를 검색할 수 있습니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={search} alt="채팅" onClick={imgClick} />
+        <div className="text_box">
+          <b>채팅</b>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={search} alt="알림" onClick={imgClick} />
+        <div className="text_box">
+          <b>알림</b>
         </div>
       </div>
       <ImgModal clickedImg={clickedImg} setClickedImg={setClickedImg} />
