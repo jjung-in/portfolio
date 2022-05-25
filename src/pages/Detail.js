@@ -129,7 +129,7 @@ function Detail() {
   return (
     <div id="detail">
       <Header2 />
-      <div className="container">
+      <div className="container detail_inwrap">
         <TopBtn />
         <BackBtn />
         <h2>{project.title}</h2>

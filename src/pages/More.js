@@ -60,7 +60,7 @@ function More() {
   return (
     <div id="more">
       <Header2 />
-      <div className="container">
+      <div className="container more_inwrap">
         <h2>PROJECT</h2>
         <BackBtn />
         <TopBtn />

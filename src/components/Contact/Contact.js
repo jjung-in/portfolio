@@ -5,7 +5,7 @@ import "./Contact.scss";
 function Contact() {
   return (
     <div id="contact">
-      <div className="container contact_wrap">
+      <div className="container contact_inwrap">
         <h2>CONTACT</h2>
         <div className="info_wrap">
           <div className="text_wrap">

@@ -62,6 +62,10 @@
 
     .home_inwrap {
       align-items: normal;
+      
+      &::before {
+        background-position: center bottom;
+      }
     }
 
     p {
@@ -91,7 +95,6 @@
     .home_inwrap {
       &::before {
         background-size: auto 90%;
-        background-position: center bottom;
       }
     }
 
