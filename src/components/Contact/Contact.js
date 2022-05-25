@@ -34,8 +34,8 @@ function Contact() {
               </a>
             </p>
           </div>
-          <footer id="footer">Copyright 2022. Jungin Go All rights reserved.</footer>
         </div>
+        <footer id="footer">Copyright 2022. Jungin Go All rights reserved.</footer>
       </div>
     </div>
   );
