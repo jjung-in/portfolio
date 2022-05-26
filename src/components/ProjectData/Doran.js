@@ -9,7 +9,12 @@ import mypage from "../../assets/img_doran/mypage.gif";
 import group from "../../assets/img_doran/group.gif";
 import group_join from "../../assets/img_doran/group_join.gif";
 import group_setting from "../../assets/img_doran/group_setting.gif";
+import group_write from "../../assets/img_doran/group_write.gif";
+import group_reply from "../../assets/img_doran/group_reply.gif";
+import group_search from "../../assets/img_doran/group_search.gif";
 import search from "../../assets/img_doran/search.gif";
+import chat from "../../assets/img_doran/chat.gif";
+import notice from "../../assets/img_doran/notice.gif";
 
 function Doran({ clickedImg, setClickedImg, imgClick }) {
   return (
@@ -133,24 +138,32 @@ function Doran({ clickedImg, setClickedImg, imgClick }) {
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={group_join} alt="그룹 페이지" onClick={imgClick} />
+        <img src={group_write} alt="그룹 페이지" onClick={imgClick} />
         <div className="text_box">
           <b>그룹 페이지 ③</b>
           <ul>
             <li>피드를 작성ㆍ수정ㆍ삭제할 수 있습니다.</li>
             <li>피드 공개 수준을 설정할 수 있습니다.</li>
-            <li>태그, 이미지 유효성</li>
+            <li>사진은 최대 4장까지 첨부할 수 있습니다.</li>
           </ul>
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={group_join} alt="그룹 페이지" onClick={imgClick} />
+        <img src={group_reply} alt="그룹 페이지" onClick={imgClick} />
         <div className="text_box">
           <b>그룹 페이지 ④</b>
           <ul>
-            <li>댓글 작성, 수정, 삭제</li>
-            <li>추천</li>
-            <li>인기 게시물 확인 (일주일 좋아요)</li>
+            <li>댓글을 작성, 수정, 삭제할 수 있습니다.</li>
+            <li>인기 게시물은 일주일 내의 피드 중 추천수가 많은 5개의 피드가 표시됩니다.</li>
+          </ul>
+        </div>
+      </div>
+      <div className="descritpion_wrap">
+        <img src={group_search} alt="그룹 페이지" onClick={imgClick} />
+        <div className="text_box">
+          <b>그룹 페이지 ⑤</b>
+          <ul>
+            <li>피드의 내용ㆍ작성자ㆍ태그를 검색할 수 있습니다.</li>
           </ul>
         </div>
       </div>
@@ -174,13 +187,13 @@ function Doran({ clickedImg, setClickedImg, imgClick }) {
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={search} alt="채팅" onClick={imgClick} />
+        <img src={chat} alt="채팅" onClick={imgClick} />
         <div className="text_box">
           <b>채팅</b>
         </div>
       </div>
       <div className="descritpion_wrap">
-        <img src={search} alt="알림" onClick={imgClick} />
+        <img src={notice} alt="알림" onClick={imgClick} />
         <div className="text_box">
           <b>알림</b>
         </div>

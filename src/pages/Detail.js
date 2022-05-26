@@ -12,6 +12,8 @@ import chic_preview from "../assets/img_chic/thumbnail.png";
 import paris_preview from "../assets/img_paris/thumbnail.png";
 import megabox_preview from "../assets/img_megabox/thumbnail.png";
 import crain_preview from "../assets/img_crain/thumbnail.png";
+import Portfolio from "../components/ProjectData/Portfolio";
+import Oramyun from "../components/ProjectData/Oramyun";
 import Todolist from "../components/ProjectData/Todolist";
 import Doran from "../components/ProjectData/Doran";
 import Chic from "../components/ProjectData/Chic";
@@ -40,19 +42,19 @@ function Detail() {
       people: "1명",
       position: ["프론트엔드"],
       skill: "React, JavaScript, SCSS",
-      projectData: <Doran clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
+      projectData: <Portfolio clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     oramyun: {
       title: "오늘의 라면",
       previewImg: oramyun_preview,
-      // viewLink: "https://jjung-in.github.io/clone-megabox",
+      viewLink: "https://jjung-in.github.io/clone-oramyun",
       githubLink: "https://github.com/jjung-in/clone-oramyun",
       description: "리액트 + 사이트 선택 이유",
       period: "2022.05",
       people: "1명",
       position: ["프론트엔드"],
       skill: "React, JavaScript, SCSS",
-      projectData: <Doran clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
+      projectData: <Oramyun clickedImg={clickedImg} setClickedImg={setClickedImg} imgClick={imgClick} />,
     },
     todolist: {
       title: "투두리스트",
