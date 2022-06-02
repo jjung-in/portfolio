@@ -37,7 +37,7 @@ function Detail() {
       previewImg: portfolio_preview,
       viewLink: "https://jjung-in.github.io/portfolio",
       githubLink: "https://github.com/jjung-in/portfolio",
-      description: "개인 포트폴리오 용도로 제작한 웹사이트입니다. React ... 개인 포트폴리오 용도로 제작한 웹사이트입니다. React ...",
+      description: "개인 포트폴리오 용도로 제작한 웹사이트입니다.",
       period: "2022.05",
       people: "1명",
       position: ["프론트엔드"],
@@ -184,7 +184,7 @@ function Detail() {
             </p>
           </div>
         </div>
-        <div className="bottopm_wrap">
+        <div className="bottom_wrap">
           <h3>세부 내용</h3>
           {project.projectData}
         </div>
